@@ -1,0 +1,35 @@
+name = "compute-frontend"
+main = "src/index.ts"
+compatibility_date = "2024-05-24"
+compatibility_flags = [ "nodejs_compat" ]
+route = { pattern = "api.example.com", custom_domain = true }
+
+[vars]
+ACK_SECRET_KEY = "abc123"
+
+[[durable_objects.bindings]]
+name = "USERS"
+class_name = "User"
+
+# Durable Object migrations
+[[migrations]]
+tag = "v1"
+new_classes = ["User"]
+
+[[queues.producers]]
+queue = "prompt-queue"
+binding = "PROMPT_QUEUE"
+
+[[queues.consumers]]
+queue = "prompt-queue"
+type = "http_pull"
+
+# Must manually set custom domain
+[[r2_buckets]]
+binding = "IMAGES"
+bucket_name = "images"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "compute-data"
+database_id = "abc123"

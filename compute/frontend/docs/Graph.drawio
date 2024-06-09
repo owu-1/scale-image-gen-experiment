@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" modified="2024-06-07T04:09:28.949Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="kxAdkJev-vLP87U-ymbe" version="24.4.9" type="device">
+  <diagram name="Page-1" id="CE9DmK7kzc6iVD9wwfXJ">
+    <mxGraphModel dx="1018" dy="543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Y5kcPOQwtqctIKrz8rbx-1" target="Y5kcPOQwtqctIKrz8rbx-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="180" />
+              <mxPoint x="330" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-22" value="Prompt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Y5kcPOQwtqctIKrz8rbx-19" vertex="1" connectable="0">
+          <mxGeometry x="-0.2185" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-1" value="Client" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="305" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-7" value="Add item onto queue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Y5kcPOQwtqctIKrz8rbx-4" target="Y5kcPOQwtqctIKrz8rbx-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Y5kcPOQwtqctIKrz8rbx-4" target="Y5kcPOQwtqctIKrz8rbx-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="170" />
+              <mxPoint x="400" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-24" value="Image ID" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Y5kcPOQwtqctIKrz8rbx-21" vertex="1" connectable="0">
+          <mxGeometry x="0.0504" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-4" value="Durable Object" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="305" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-15" value="Get prompt and acknowledge&lt;div&gt;when finished processing&amp;nbsp;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="Y5kcPOQwtqctIKrz8rbx-6" target="Y5kcPOQwtqctIKrz8rbx-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-6" value="Queue" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="305" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-14" value="Upload image" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Y5kcPOQwtqctIKrz8rbx-8" target="Y5kcPOQwtqctIKrz8rbx-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-8" value="GPU" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="305" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Y5kcPOQwtqctIKrz8rbx-13" target="Y5kcPOQwtqctIKrz8rbx-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="650" />
+              <mxPoint x="260" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-29" value="Download&lt;div&gt;image&lt;/div&gt;&lt;div&gt;with image id&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Y5kcPOQwtqctIKrz8rbx-28" vertex="1" connectable="0">
+          <mxGeometry x="0.0105" y="-4" relative="1" as="geometry">
+            <mxPoint x="-4" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-13" value="R2" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="305" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5kcPOQwtqctIKrz8rbx-17" value="Note: Access to durable object is done through a worker" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="225" width="170" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
