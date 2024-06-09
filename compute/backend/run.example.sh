@@ -13,4 +13,11 @@ export ACK_ENDPOINT="https://example.com/ack"
 
 export MODEL_IDENTIFIER="abc123"
 
+# Activate the correct conda environment
+eval "$(/home/ubuntu/miniconda3/bin/conda shell.bash hook)"
+conda activate build
+
+# Fix python header file
+export LD_LIBRARY_PATH="/home/ubuntu/miniconda3/envs/build/lib"
+
 python main.py

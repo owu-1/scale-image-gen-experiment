@@ -1,0 +1,11 @@
+[Unit]
+Description=Unfuzzed Backend
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/bash /home/ubuntu/run.sh
+
+[Install]
+WantedBy=default.target

@@ -108,19 +108,24 @@ def main():
         aws_secret_access_key=r2_secret_access_key)
 
     while True:
-        message = pull()
+        try:
+            message = pull()
 
-        if message is None:
-            print('Nothing in queue...')
-            time.sleep(5)
-            continue
-        
-        message_body, message_lease_id = message
-        print(message_body)
+            if message is None:
+                print('Nothing in queue...')
+                time.sleep(5)
+                continue
+            
+            message_body, message_lease_id = message
+            print(message_body)
 
-        work(message_body, stable_diffusion_xl, s3)
+            work(message_body, stable_diffusion_xl, s3)
 
-        ack(message_body, message_lease_id)
+            ack(message_body, message_lease_id)
+        except Exception as e:
+            print(e)
+            print("An error occurred. Continuing...")
+            time.sleep(1)
 
 if __name__ == '__main__':
     main()

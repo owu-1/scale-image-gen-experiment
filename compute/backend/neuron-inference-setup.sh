@@ -13,6 +13,8 @@ BUILD_DIR="/home/ubuntu"
 # - Use 50GB to safely store libraries, model and model cache (which is generated on first model load)
 # - Should run main.py once before snapshoting disk to capture the neuron cache (I have no idea where it is stored)
 
+# todo: The model cache isn't working I think. Its taking as long as first start
+
 download () {
     local save_path=$1
     local url=$2

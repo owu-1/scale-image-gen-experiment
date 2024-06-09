@@ -117,7 +117,6 @@ class UnfuzzedKSampler:
         return latents
 
     def sample(self, key, positive, negative):
-        print(key)
         if key != age_check_key + str(True):
             raise Exception("You must be 18+ to use the UnfuzzedKSampler node. Use the UnfuzzedAgeCheck node to confirm you are 18+")
     
